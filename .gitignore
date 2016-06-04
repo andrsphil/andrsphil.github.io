@@ -1,0 +1,11 @@
+# Do not include generated page and development directory
+_site/
+dev/
+
+# Standard Jekyll gitignore
+# Copyright (c) 2016 GitHub, Inc.
+
+ite/
+.sass-cache/
+.jekyll-metadata
+
