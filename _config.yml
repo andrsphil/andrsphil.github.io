@@ -1,0 +1,22 @@
+title: AP
+tagline: "Andreas Philippi, software developer and web designer"
+baseurl: ""
+assets: /assets
+language: en
+
+# Author info
+author:
+  name: Andreas Philippi
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Files to exclude in the site build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - License.md
+  - Readme.md
+  - dev/
