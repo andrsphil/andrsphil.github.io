@@ -1,0 +1,41 @@
+// ================================================================================================
+// Typography
+// ================================================================================================
+
+body
+{
+  color: $color-base;
+  font-size: $font-size-base;
+  font-family: $font-family;
+  line-height: $line-height-base;
+}
+
+a
+{
+  color: $color-secondary;
+  text-decoration: none;
+  transition: color $transition-duration $transition-effect;
+
+  &:hover
+  {
+    color: $color-primary;
+  }
+}
+
+h1
+{
+  line-height: 1.1;
+  font-size: $font-size-h1;
+}
+
+.title
+{
+  color: $color-primary;
+  font-weight: bold;
+  margin: $spacing-sm 0;
+}
+
+.subtitle
+{
+  margin: $spacing-sm 0;
+}
