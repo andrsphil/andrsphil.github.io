@@ -1,3 +1,5 @@
+.DS_STORE
+
 # Do not include generated page and development directory
 _site/
 dev/
