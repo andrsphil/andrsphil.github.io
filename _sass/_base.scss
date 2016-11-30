@@ -1,6 +1,6 @@
-// ================================================================================================
-// Base
-// ================================================================================================
+// -----------------------------------------------------------------------------------------------
+//  Scaffolding
+// -----------------------------------------------------------------------------------------------
 
 html, body
 {
@@ -14,6 +14,55 @@ html
   // Base font size for rem units
   font-size: 10px;
 }
+
+body
+{
+  background-color: $color-background;
+  color: $color-base;
+  font-size: $font-size-base;
+  font-family: $font-family;
+  line-height: $line-height-base;
+}
+
+
+// -----------------------------------------------------------------------------------------------
+//  Typography
+// -----------------------------------------------------------------------------------------------
+
+a
+{
+  color: $color-secondary;
+  text-decoration: none;
+  transition: color $transition-duration $transition-effect;
+
+  &:hover
+  {
+    color: $color-primary;
+  }
+}
+
+h1
+{
+  line-height: 1.1;
+  font-size: $font-size-h1;
+}
+
+.title
+{
+  color: $color-primary;
+  font-weight: bold;
+  margin: $spacing-sm 0;
+}
+
+.subtitle
+{
+  margin: $spacing-sm 0;
+}
+
+
+// -----------------------------------------------------------------------------------------------
+//  Page elements
+// -----------------------------------------------------------------------------------------------
 
 .profile-pic
 {
@@ -46,12 +95,6 @@ html
     margin: 0 1.0rem;
   }
 
-  a
-  {
-    color: $color-base;
-    text-decoration: none;
-  }
-
   @media (min-width: $screen-sm-min)
   {
     margin-top: $spacing-lg;
@@ -64,16 +107,19 @@ html
   border-radius: 50%;
   border-style: solid;
   border-width: 0.1rem;
+  color: $color-base;
   display: inline-block;
   height: $icon-circle-size;
   line-height: $icon-circle-size;
   text-align: center;
-  transition: border-color $transition-duration $transition-effect;
+  transition: border-color $transition-duration $transition-effect,
+              color $transition-duration $transition-effect;
   width: $icon-circle-size;
 
   &:hover
   {
     border-color: $color-primary;
+    color: $color-primary;
   }
 }
 
