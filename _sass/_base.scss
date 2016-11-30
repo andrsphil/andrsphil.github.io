@@ -20,8 +20,8 @@ body
   background-color: $color-background;
   color: $color-base;
   font-size: $font-size-base;
-  font-family: $font-family;
-  line-height: $line-height-base;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
 }
 
 
@@ -29,11 +29,36 @@ body
 //  Typography
 // -----------------------------------------------------------------------------------------------
 
+h1
+{
+  color: $color-secondary;
+  font-size: 4.0rem;
+  font-weight: normal;
+  line-height: 1.1;
+  margin: $spacing-sm 0 ($spacing-md * 2) 0;
+  position: relative;
+
+  &:after
+  {
+    border-bottom: 2px $color-primary solid;
+    bottom: (- $spacing-md);
+    content: '';
+    left: 0;
+    position: absolute;
+    width: 5.0rem;
+  }
+}
+
+p
+{
+  margin: ($spacing-sm / 2) 0;
+}
+
 a
 {
   color: $color-secondary;
   text-decoration: none;
-  transition: color $transition-duration $transition-effect;
+  transition: color $transition;
 
   &:hover
   {
@@ -41,89 +66,32 @@ a
   }
 }
 
-h1
-{
-  line-height: 1.1;
-  font-size: $font-size-h1;
-}
-
-.title
-{
-  color: $color-primary;
-  font-weight: bold;
-  margin: $spacing-sm 0;
-}
-
-.subtitle
-{
-  margin: $spacing-sm 0;
-}
-
 
 // -----------------------------------------------------------------------------------------------
-//  Page elements
+//  Layout
 // -----------------------------------------------------------------------------------------------
 
-.profile-pic
+.column
 {
-  border-radius: 50%;
-  width: $profile-pic-size;
-  height: $profile-pic-size;
-  opacity: 0.8;
-  transition: opacity $transition-duration $transition-effect;
-
-  &:hover
-  {
-    opacity: 1;
-  }
-
-  @media(min-width: $screen-sm-min)
-  {
-    margin-bottom: ($spacing-lg - $spacing-sm);
-  }
-}
-
-.button-wrapper
-{
-  list-style-type: none;
-  margin: $spacing-sm 0 0 0;
-  padding: 0;
-
-  li
-  {
-    display: inline;
-    margin: 0 1.0rem;
-  }
+  display: table;
+  height: 100%;
+  width: 100%;
 
   @media (min-width: $screen-sm-min)
   {
-    margin-top: $spacing-lg;
+    float: left;
+    width: 50%;
   }
 }
 
-.icon-circle
+.content-wrapper
 {
-  border-color: $color-base;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 0.1rem;
-  color: $color-base;
-  display: inline-block;
-  height: $icon-circle-size;
-  line-height: $icon-circle-size;
-  text-align: center;
-  transition: border-color $transition-duration $transition-effect,
-              color $transition-duration $transition-effect;
-  width: $icon-circle-size;
+  display: table-cell;
+  padding: $spacing-md;
+  vertical-align: middle;
 
-  &:hover
+  @media (min-width: $screen-sm-min)
   {
-    border-color: $color-primary;
-    color: $color-primary;
+    padding: $spacing-lg;
   }
-}
-
-[class^="icon-"]:before, [class*=" icon-"]:before
-{
-  font-size: $icon-font-size;
 }

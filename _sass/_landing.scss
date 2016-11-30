@@ -2,34 +2,68 @@
 //  Landing page
 // -----------------------------------------------------------------------------------------------
 
-.cover
+.bio-portrait
 {
-	display: table;
-	height: 100%;
-	width: 100%;
+  background-color: darken($color-background, 5%);
+  background-image: url($baseurl + $assets + '/img/bio-portrait.jpg');
+  background-position: left center;
+  background-size: cover;
+  border-radius: 0.4rem;
+  height: 100%;
+  opacity: 0.8;
+  transition: all $transition;
 }
 
-.cover-wrapper
+
+// -----------------------------------------------------------------------------------------------
+//  Page elements
+// -----------------------------------------------------------------------------------------------
+
+.buttons
 {
-	display: table-cell;
-	vertical-align: middle;
+  list-style-type: none;
+  margin: $spacing-sm 0;
+  padding: 0;
+
+  li
+  {
+    display: inline;
+    margin: 0 1.0rem 0 0;
+  }
+
+  @media (min-width: $screen-sm-min)
+  {
+    margin-top: $spacing-md;
+    margin-bottom: $spacing-md;
+  }
 }
 
-.cover-content
+.icon-circle
 {
-	margin: auto;
-	padding: $spacing-sm;
-	text-align: center;
-}
-
-.landing
-{
-  border-width: $landing-border-width 0 0 0;
+  background-color: $color-background;
+  border-color: $color-base;
+  border-radius: 50%;
   border-style: solid;
-  border-color: $color-primary;
+  border-width: 0.1rem;
+  color: $color-base;
+  display: inline-block;
+  height: $icon-circle-size;
+  line-height: $icon-circle-size;
+  text-align: center;
+  transition: background-color $transition,
+              border-color $transition,
+              color $transition;
+  width: $icon-circle-size;
 
-	.cover-content
-	{
-		max-width: $cover-content-width;
-	}
+  &:hover
+  {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: $color-background;
+  }
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before
+{
+  font-size: $icon-font-size;
 }
