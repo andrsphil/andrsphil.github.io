@@ -2,16 +2,27 @@
 //  Landing page
 // -----------------------------------------------------------------------------------------------
 
+.bio-text
+{
+  h1
+  {
+    margin-top: 0;
+  }
+
+  .buttons
+  {
+    margin-bottom: 0;
+  }
+}
+
 .bio-portrait
 {
   background-color: darken($color-background, 5%);
   background-image: url($baseurl + $assets + '/img/bio-portrait.jpg');
   background-position: left center;
   background-size: cover;
-  border-radius: 0.4rem;
   height: 100%;
   opacity: 0.8;
-  transition: all $transition;
 }
 
 
@@ -40,7 +51,7 @@
 
 .icon-circle
 {
-  background-color: $color-background;
+  background-color: transparent;
   border-color: $color-base;
   border-radius: 50%;
   border-style: solid;

@@ -6,7 +6,6 @@ html, body
 {
   width: 100%;
   height: 100%;
-  min-height: 100%;
 }
 
 html
@@ -32,7 +31,7 @@ body
 h1
 {
   color: $color-secondary;
-  font-size: 4.0rem;
+  font-size: (1.5 * $font-size-base);
   font-weight: normal;
   line-height: 1.1;
   margin: $spacing-sm 0 ($spacing-md * 2) 0;
@@ -46,6 +45,11 @@ h1
     left: 0;
     position: absolute;
     width: 5.0rem;
+  }
+
+  @media (min-width: $screen-sm-min)
+  {
+    font-size: (2.5 * $font-size-base);
   }
 }
 
@@ -73,14 +77,38 @@ a
 
 .column
 {
+  background-color: $color-background;
   display: table;
-  height: 100%;
   width: 100%;
+
+  &.left
+  {
+    box-shadow: 0 0 50px 0 fade-out(#000000, 0.75);
+    position: absolute;
+    top: 75%;
+    z-index: 1;
+  }
+
+  &.right
+  {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 0;
+  }
 
   @media (min-width: $screen-sm-min)
   {
     float: left;
+    height: 100%;
     width: 50%;
+
+    &.left
+    {
+      box-shadow: none;
+      position: relative;
+      top: 0;
+    }
   }
 }
 
