@@ -20,15 +20,6 @@
   }
 }
 
-.bio-portrait
-{
-  background-color: darken($color-background, 5%);
-  background-image: url($baseurl + $assets + '/img/bio-portrait.jpg');
-  background-position: 80% center;
-  background-size: cover;
-  height: 100%;
-}
-
 
 // -----------------------------------------------------------------------------------------------
 //  Page elements

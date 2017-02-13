@@ -86,41 +86,12 @@ a
 //  Layout
 // -----------------------------------------------------------------------------------------------
 
-.column
+.table
 {
   background-color: $color-background;
   display: table;
+  height: 100%;
   width: 100%;
-
-  &.left
-  {
-    box-shadow: 0 0 50px 0 fade-out(#000000, 0.75);
-    position: absolute;
-    top: 75%;
-    z-index: 1;
-  }
-
-  &.right
-  {
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 0;
-  }
-
-  @media (min-width: $screen-sm-min)
-  {
-    float: left;
-    height: 100%;
-    width: 50%;
-
-    &.left
-    {
-      box-shadow: none;
-      position: relative;
-      top: 0;
-    }
-  }
 }
 
 .content-wrapper
@@ -133,4 +104,10 @@ a
   {
     padding: $spacing-lg;
   }
+}
+
+.content
+{
+  max-width: 60.0rem;
+  margin: auto;
 }
