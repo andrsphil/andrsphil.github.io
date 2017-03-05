@@ -44,6 +44,7 @@ h1
     content: '';
     left: 0;
     position: absolute;
+    transition: border-bottom-color 2.0s ease-in-out;
     width: 5.0rem;
   }
 
