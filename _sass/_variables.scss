@@ -4,17 +4,18 @@
 
 $assets: '/assets';
 $baseurl: '';
-$font-size-base: 1.6rem;
+$font-size-base: 1.5rem;
+$font-size-large: ($font-size-base * 2);
 $icon-circle-size: ($font-size-base + 1.5rem);
-$icon-font-size: ($font-size-base + 0.1rem);
+$icon-font-size: ($font-size-base + 0.2rem);
 $screen-sm-min: 1024px;
 $spacing-lg: 8.0rem;
 $spacing-md: 4.0rem;
 $spacing-sm: 3.0rem;
-$transition: 0.15s ease-in-out;
+$transition: 0.3s ease-in-out;
 
 // Primary colors
 $color-background: #ffffff;
 $color-base: #9ea7b0;
-$color-primary: #fdbf51;
+$color-primary: #03A9F4;
 $color-secondary: #293a4d;

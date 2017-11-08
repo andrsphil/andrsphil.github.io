@@ -37,35 +37,21 @@
     margin: 0 1.0rem 0 0;
   }
 
+  a
+  {
+    color: $color-base;
+    transition: $transition;
+
+    &:hover
+    {
+      color: $color-secondary;
+    }
+  }
+
   @media (min-width: $screen-sm-min)
   {
     margin-top: $spacing-md;
     margin-bottom: $spacing-md;
-  }
-}
-
-.icon-circle
-{
-  background-color: transparent;
-  border-color: $color-base;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 0.1rem;
-  color: $color-base;
-  display: inline-block;
-  height: $icon-circle-size;
-  line-height: $icon-circle-size;
-  text-align: center;
-  transition: background-color $transition,
-              border-color $transition,
-              color $transition;
-  width: $icon-circle-size;
-
-  &:hover
-  {
-    background-color: $color-primary;
-    border-color: $color-primary;
-    color: $color-background;
   }
 }
 
