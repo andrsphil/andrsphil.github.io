@@ -2,12 +2,24 @@
 // Layout
 // -----------------------------------------------------------------------------
 
+.container
+{
+  padding-left: $layout-spacing-lg;
+  padding-right: $layout-spacing-lg;
+}
+
+.columns
+{
+  margin-left: -$layout-spacing-lg;
+  margin-right: -$layout-spacing-lg;
+}
+
 .info
 {
   background-color: $bg-color;
   border-radius: 0.2rem;
   font-size: $font-size-sm;
-  padding: ($unit-7 / 2);
+  padding: $unit-3;
   text-align: center;
 }
 
@@ -26,17 +38,12 @@
 .cover-content-wrapper
 {
   display: table-cell;
-  padding: $unit-10;
+  padding: $unit-10 $unit-4;
   vertical-align: middle;
-
-  @media (min-width: $size-lg)
-  {
-    padding: $unit-16;
-  }
 }
 
 .cover-content
 {
-  max-width: 30.0rem;
+  max-width: 35.0rem;
   margin: auto;
 }

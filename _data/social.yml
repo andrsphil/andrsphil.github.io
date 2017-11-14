@@ -1,12 +1,16 @@
-linkedin:
-  url: https://www.linkedin.com/in/andreas-philippi
-  icon: icon-linkedin
 github:
+  name: GitHub
+  tagline: Things I've coded
   url: https://www.github.com/anphil
-  icon: icon-github-circled-1
+linkedin:
+  name: LinkedIn
+  tagline: Things I've learned
+  url: https://www.linkedin.com/in/andreas-philippi
 instagram:
+  name: Instagram
+  tagline: Things I've seen
   url: https://www.instagram.com/andreasxphil
-  icon: icon-instagram
 mail:
+  name: E-Mail
+  tagline: Things you'd like to tell me
   url: "mailto:"
-  icon: icon-mail
