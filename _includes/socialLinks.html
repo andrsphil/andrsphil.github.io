@@ -1,0 +1,16 @@
+<noscript>
+  <p class="info">Please enable JavaScript in order to reveal my e-mail address!</p>
+</noscript>
+
+<ul class="socialLinks">
+  {% for item in site.data.social %}
+  {% assign icon_data = item[1] %}
+  <li>
+    <a class="{{ item[0] }}-link"
+      href="{{ icon_data.url }}"
+      target="{% if icon_data.url | slice: 0 != '/' %}_blank{% endif %}">
+      <span class="{{ icon_data.icon }}"></span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

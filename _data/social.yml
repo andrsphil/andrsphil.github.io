@@ -1,0 +1,12 @@
+linkedin:
+  url: https://www.linkedin.com/in/andreas-philippi
+  icon: icon-linkedin
+github:
+  url: https://www.github.com/anphil
+  icon: icon-github-circled-1
+instagram:
+  url: https://www.instagram.com/andreasxphil
+  icon: icon-instagram
+mail:
+  url: "mailto:"
+  icon: icon-mail
