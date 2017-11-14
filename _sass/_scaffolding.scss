@@ -1,96 +1,9 @@
-// -----------------------------------------------------------------------------------------------
-//  Scaffolding
-// -----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// Scaffolding
+// -----------------------------------------------------------------------------
 
 html, body
 {
   width: 100%;
   height: 100%;
-}
-
-
-// -----------------------------------------------------------------------------------------------
-//  Typography
-// -----------------------------------------------------------------------------------------------
-
-h1
-{
-  color: $secondary-color;
-  font-size: $font-size-lg;
-  font-weight: normal;
-  line-height: 1.1;
-  margin: $unit-7 0 ($unit-10 * 2) 0;
-  position: relative;
-
-  &:after
-  {
-    border-bottom: 2px $primary-color solid;
-    bottom: (- $unit-10);
-    content: '';
-    left: 0;
-    position: absolute;
-    width: 2.5rem;
-  }
-}
-
-p
-{
-  margin: $unit-4 0;
-}
-
-a
-{
-  color: $secondary-color;
-  text-decoration: none;
-  transition: color $transition;
-
-  &:hover
-  {
-    color: $primary-color;
-    text-decoration: none;
-  }
-}
-
-[class^="icon-"]:before, [class*=" icon-"]:before
-{
-  font-size: 110%;
-}
-
-.info
-{
-  background-color: $bg-color;
-  border-radius: 0.2rem;
-  font-size: $font-size-sm;
-  padding: ($unit-7 / 2);
-  text-align: center;
-}
-
-
-// -----------------------------------------------------------------------------------------------
-//  Layout
-// -----------------------------------------------------------------------------------------------
-
-.cover
-{
-  display: table;
-  height: 100%;
-  width: 100%;
-}
-
-.cover-content-wrapper
-{
-  display: table-cell;
-  padding: $unit-10;
-  vertical-align: middle;
-
-  @media (min-width: $size-lg)
-  {
-    padding: $unit-16;
-  }
-}
-
-.cover-content
-{
-  max-width: 30.0rem;
-  margin: auto;
 }

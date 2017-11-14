@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+h1
+{
+  color: $secondary-color;
+  font-size: $font-size-lg;
+  font-weight: normal;
+  line-height: 1.1;
+  margin: $unit-7 0 ($unit-10 * 2) 0;
+  position: relative;
+
+  &:after
+  {
+    border-bottom: 2px $primary-color solid;
+    bottom: (- $unit-10);
+    content: '';
+    left: 0;
+    position: absolute;
+    width: 2.5rem;
+  }
+}
+
+p
+{
+  margin: $unit-4 0;
+}
+
+a
+{
+  text-decoration: none;
+  transition: color $transition;
+
+  &:hover
+  {
+    text-decoration: none;
+  }
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before
+{
+  font-size: 110%;
+}

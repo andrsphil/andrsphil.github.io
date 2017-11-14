@@ -16,7 +16,11 @@
 @import 'spectre/src/layout';
 @import 'spectre/src/utilities';
 
-// Page styles
+// Global styles
 @import 'scaffolding';
+@import 'typography';
+@import 'layout';
 @import 'fontello';
-@import 'landing';
+
+// Page styles
+@import 'pages/landing';

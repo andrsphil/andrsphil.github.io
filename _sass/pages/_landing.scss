@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------------
+// Landing page
+// -----------------------------------------------------------------------------
+
+.bio
+{
+  color: $gray-color;
+
+  *:first-child
+  {
+    margin-top: 0;
+  }
+
+  *:last-child
+  {
+    margin-bottom: 0;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// Social links
+// -----------------------------------------------------------------------------
+
+.socialLinks
+{
+  list-style-type: none;
+  margin: $unit-10 0;
+  padding: 0;
+
+  li
+  {
+    display: inline;
+    margin: 0 $unit-3 0 0;
+  }
+
+  a
+  {
+    color: $gray-color;
+    transition: $transition;
+
+    &:hover
+    {
+      color: $secondary-color;
+    }
+  }
+
+  @media (min-width: $size-lg)
+  {
+    margin-top: $unit-10;
+    margin-bottom: $unit-10;
+  }
+}
