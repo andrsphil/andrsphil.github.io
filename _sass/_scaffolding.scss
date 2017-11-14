@@ -8,21 +8,6 @@ html, body
   height: 100%;
 }
 
-html
-{
-  // Base font size for rem units
-  font-size: 10px;
-}
-
-body
-{
-  background-color: $color-background;
-  color: $color-base;
-  font-size: $font-size-base;
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.6;
-}
-
 
 // -----------------------------------------------------------------------------------------------
 //  Typography
@@ -30,48 +15,53 @@ body
 
 h1
 {
-  color: $color-secondary;
-  font-size: $font-size-large;
+  color: $secondary-color;
+  font-size: $font-size-lg;
   font-weight: normal;
   line-height: 1.1;
-  margin: $spacing-sm 0 ($spacing-md * 2) 0;
+  margin: $unit-7 0 ($unit-10 * 2) 0;
   position: relative;
 
   &:after
   {
-    border-bottom: 2px $color-primary solid;
-    bottom: (- $spacing-md);
+    border-bottom: 2px $primary-color solid;
+    bottom: (- $unit-10);
     content: '';
     left: 0;
     position: absolute;
-    transition: border-bottom-color 2.0s ease-in-out;
-    width: 5.0rem;
+    width: 2.5rem;
   }
 }
 
 p
 {
-  margin: ($spacing-sm / 2) 0;
+  margin: $unit-4 0;
 }
 
 a
 {
-  color: $color-secondary;
+  color: $secondary-color;
   text-decoration: none;
   transition: color $transition;
 
   &:hover
   {
-    color: $color-primary;
+    color: $primary-color;
+    text-decoration: none;
   }
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before
+{
+  font-size: 110%;
 }
 
 .info
 {
-  background-color: lighten($color-base, 30);
-  border-radius: 0.4rem;
-  font-size: ($font-size-base * 0.75);
-  padding: ($spacing-sm / 2);
+  background-color: $bg-color;
+  border-radius: 0.2rem;
+  font-size: $font-size-sm;
+  padding: ($unit-7 / 2);
   text-align: center;
 }
 
@@ -80,28 +70,27 @@ a
 //  Layout
 // -----------------------------------------------------------------------------------------------
 
-.table
+.cover
 {
-  background-color: $color-background;
   display: table;
   height: 100%;
   width: 100%;
 }
 
-.content-wrapper
+.cover-content-wrapper
 {
   display: table-cell;
-  padding: $spacing-md;
+  padding: $unit-10;
   vertical-align: middle;
 
-  @media (min-width: $screen-sm-min)
+  @media (min-width: $size-lg)
   {
-    padding: $spacing-lg;
+    padding: $unit-16;
   }
 }
 
-.content
+.cover-content
 {
-  max-width: 60.0rem;
+  max-width: 30.0rem;
   margin: auto;
 }

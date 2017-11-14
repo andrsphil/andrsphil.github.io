@@ -1,21 +1,38 @@
-// -----------------------------------------------------------------------------------------------
-//  Variables
-// -----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// Variables
+// -----------------------------------------------------------------------------
 
 $assets: '/assets';
 $baseurl: '';
-$font-size-base: 1.5rem;
-$font-size-large: ($font-size-base * 2);
-$icon-circle-size: ($font-size-base + 1.5rem);
-$icon-font-size: ($font-size-base + 0.2rem);
-$screen-sm-min: 1024px;
-$spacing-lg: 8.0rem;
-$spacing-md: 4.0rem;
-$spacing-sm: 3.0rem;
+$spacing-lg: 4.0rem;
+$unit-10: 2.0rem;
+$unit-7: 1.5rem;
 $transition: 0.3s ease-in-out;
 
-// Primary colors
-$color-background: #ffffff;
-$color-base: #9ea7b0;
-$color-primary: #03A9F4;
-$color-secondary: #293a4d;
+
+// -----------------------------------------------------------------------------
+// Spectre
+// -----------------------------------------------------------------------------
+
+// Colors
+$primary-color: #03a9f4;
+$secondary-color: #293a4d;
+$dark-color: #293a4d;
+$light-color: #ffffff;
+$gray-color: #9ea7b0;
+
+$body-font-color: lighten($dark-color, 5%) !default;
+$link-color: $dark-color;
+$link-color-dark: $primary-color;
+
+$bg-color: lighten($dark-color, 72.5%);
+
+// Fonts
+$base-font-family: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+
+// Font sizes
+$font-size: 0.75rem;
+$font-size-sm: ($font-size * 0.75);
+$font-size-lg: ($font-size * 2);
+$html-line-height: 1.6;
+$line-height: 2.0;

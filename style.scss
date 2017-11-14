@@ -4,7 +4,19 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
 
-@import "variables";
-@import "base";
-@import "fontello";
-@import "landing";
+// Custom variables
+@import 'variables';
+
+// Vendor
+@import 'spectre/src/variables';
+@import 'spectre/src/mixins';
+@import 'spectre/src/normalize';
+@import 'spectre/src/base';
+@import 'spectre/src/typography';
+@import 'spectre/src/layout';
+@import 'spectre/src/utilities';
+
+// Page styles
+@import 'scaffolding';
+@import 'fontello';
+@import 'landing';
