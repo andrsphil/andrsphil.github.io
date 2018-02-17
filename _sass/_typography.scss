@@ -6,10 +6,15 @@ h1
 {
   color: $secondary-color;
   font-size: $font-size-lg;
-  font-weight: 600;
+  font-weight: 500;
   margin: $unit-7 0 $unit-10 0;
   position: relative;
   text-transform: uppercase;
+}
+
+h2
+{
+  font-weight: normal;
 }
 
 a
