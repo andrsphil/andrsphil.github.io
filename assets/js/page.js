@@ -5,8 +5,8 @@
   // This code is freeware provided these four comment lines remain intact
   // A wizard to generate this code is at http://www.jottings.com/obfuscator/
 
-  coded = "t-G8@7sYz77w.u3"
-  key = "bXyo9RY4jElGIdO62c7SFmKrPzhUuDQWxgAHeMakT85sfn0BVLZ3Ctw1iNpJvq"
+  coded = "KEL5f.0YTpT00T+YXppZ@uFKTp.BZF"
+  key = "FZP7cQrIbs4HYMzLa2i3uwJ0XlkxjUWnmoBv5OGf1SC9hyKdT8R6gVApeDNtqE"
   shift=coded.length
   link=""
   for (i=0; i<coded.length; i++) {
