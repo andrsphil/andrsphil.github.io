@@ -1,16 +1,16 @@
 github:
-  name: GitHub
-  tagline: Things I've coded
-  url: https://www.github.com/anphil
+  name: "GitHub"
+  tagline: "Things I've coded"
+  url: "https://www.github.com/anphil"
 linkedin:
-  name: Linked In
-  tagline: Things I've learned
-  url: https://www.linkedin.com/in/andreas-philippi
+  name: "Linked In"
+  tagline: "Things I've learned"
+  url: "https://www.linkedin.com/in/andreas-philippi"
 instagram:
-  name: Instagram
-  tagline: Things I've seen
-  url: https://www.instagram.com/andrs.phil
+  name: "Instagram"
+  tagline: "Things I've seen"
+  url: "https://www.instagram.com/andrs.phil"
 mail:
-  name: E-Mail
-  tagline: Things you'd like to tell me
+  name: "E-Mail"
+  tagline: "Things you'd like to tell me"
   url: "mailto:"

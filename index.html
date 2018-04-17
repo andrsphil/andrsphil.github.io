@@ -14,10 +14,11 @@ title: Hi!
   <div class="columns">
     {% for item in site.data.social %}
     {% assign item_data = item[1] %}
+    {% assign first_url_char = item_data.url | slice: 0 %}
     <div class="link">
       <a class="{{ item[0] }}-link"
         href="{{ item_data.url }}"
-        target="{% if item_data.url | slice: 0 != '/' %}_blank{% endif %}">
+        target="{% if first_url_char != '/' %}_blank{% endif %}">
         <h2 class="tagline">{{ item_data.tagline }}</h2>
         <p class="name">{{ item_data.name }}</p>
       </a>
